@@ -29,7 +29,7 @@ export default function Movies() {
   }, [searchQuery]);
 
   return (
-    <div className='flex flex-col gap-5'>
+    <div className='flex flex-col gap-5 p-6 py-8 md:px-8 lg:px-16'>
       <div className=''>
         <h1 className='text-2xl font-bold'>Browse Movies</h1>
         <p className='text-gray-500'>Search movies by title.</p>
@@ -44,14 +44,17 @@ export default function Movies() {
 
       {loading && <Loading />}
       {error && <Error />}
-      {!loading && !error && movies.length > 0 ? (
+
+      {(!loading && !error && movies.length === 0) && (
+        <p className="text-gray-500">No movies found.</p>
+      )}
+
+      {!loading && !error && movies.length > 0 && (
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5'>
           {movies.map((movie) => (
             <MovieCard key={movie.id} movie={movie} />
           ))}
         </div> 
-      ):(
-        <p className="text-gray-500">No movies found.</p>
       )} 
 
     </div>

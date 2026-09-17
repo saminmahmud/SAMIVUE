@@ -10,8 +10,8 @@ export default function Navbar() {
       </Link>
       
       <div className="text-gray-300 flex gap-5">
-        <Link to="" className="hover:text-light-gray">Home</Link>
-        <Link to="movies/" className="hover:text-light-gray">Movies</Link>
+        <Link to="/" className="hover:text-light-gray">Home</Link>
+        <Link to="/movies" className="hover:text-light-gray">Movies</Link>
       </div>
     </div>
   )
