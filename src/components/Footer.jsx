@@ -2,7 +2,7 @@ import { Link } from 'react-router'
 
 export default function Footer() {
   return (
-    <div className="bg-deep-blue px-4 py-3 text-gray-400 flex justify-between text-xs">
+    <div className="bg-deep-blue px-4 py-4 md:px-8 lg:px-16 text-gray-400 flex justify-between text-xs">
       <p>© 2026 SAMIVUE</p>
       <div className="flex items-center gap-5">
         <Link to="https://github.com/saminmahmud" target="_blank" className="hover:text-light-gray">Github</Link>
