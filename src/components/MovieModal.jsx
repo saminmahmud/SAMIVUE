@@ -7,7 +7,7 @@ export default function MovieModal({ onClose, movie }) {
 			<div className="h-auto p-5 rounded-2xl w-100 shadow-2xl bg-deep-blue border border-light-gray/10">
                 <div className="flex flex-col gap-5">
                     <div className="">
-                        <img src={movie.image.medium} alt="Movie Poster" className='rounded-md w-full aspect-4/3 object-cover ' />
+                        <img src={movie.image?.medium} alt={movie.name} className='rounded-md w-full aspect-4/3 object-cover ' />
                     </div>
                     
                     <div className="">

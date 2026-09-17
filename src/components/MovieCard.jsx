@@ -8,7 +8,7 @@ export default function MovieCard({ movie }) {
   return (
     <>
     <div className='bg-dark-blue rounded-md p-2 shadow-lg border border-light-gray/10 hover:scale-105 transition-transform duration-300'>
-        <img src={movie.image.medium} alt="Movie Poster" className='rounded-md w-full aspect-4/3 object-cover ' />
+        <img src={movie.image?.medium} alt={movie.name} className='rounded-md w-full aspect-4/3 object-cover ' />
         <h2 className='text-lg font-semibold mt-2'>{ movie.name }</h2>
 
         <div className='flex items-center mt-1 gap-5'>
