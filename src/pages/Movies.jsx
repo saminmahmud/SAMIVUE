@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import MovieCard from "../components/MovieCard";
-import { getMovies } from "../services/get-movies";
 import Loading from "../components/Loading";
 import Error from "../components/Error";
+import { getMovies } from "../services/get-movies";
 
 export default function Movies() {
   const [searchQuery, setSearchQuery] = useState('');
