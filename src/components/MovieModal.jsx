@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 export default function MovieModal({ onClose, movie }) {
 	return (
-		<div className="fixed inset-0 flex justify-center items-center bg-gray-950/60">
+		<div className="fixed inset-0 flex justify-center items-center bg-gray-950/60 z-50 p-6 py-8 md:px-8 lg:px-16">
 			<div className="h-auto p-5 rounded-2xl w-100 shadow-2xl bg-deep-blue border border-light-gray/10">
                 <div className="flex flex-col gap-5">
                     <div className="">
